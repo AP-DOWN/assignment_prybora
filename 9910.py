@@ -1,5 +1,5 @@
 #9910
-a, b = map(int, input().split())
+l, r = map(int, input().split())
 l = min(a, b) + 1
 r = max(a, b) - 1
 count = 0
