@@ -1,6 +1,10 @@
 #9910
 a, b = map(int, input().split())
-left = min(a, b) + 1
-right = max(a, b) - 1
-count = (right + 1) // 2 - (left) // 2
+l = min(a, b) + 1
+r = max(a, b) - 1
+count = 0
+for x in range(l, r + 1):
+    if x % 2 != 0:
+        count += 1
 print(count)
+
